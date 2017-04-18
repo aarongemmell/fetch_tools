@@ -17,4 +17,8 @@ install(PROGRAMS scripts/fetch
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+install(PROGRAMS scripts/fetch
+  DESTINATION ${CATKIN_Aaron_BIN_DESTINATION}
+)
+
 catkin_add_env_hooks(30.fetch_tools SHELLS bash DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env-hooks)
